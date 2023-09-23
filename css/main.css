@@ -19,9 +19,20 @@ header{
     margin: auto;
     padding: 20px 0;
 }
+
 .logo{
     width: 40px;
 
+}
+.container i{
+    color: white;
+    font-size:42px ;
+    
+
+}
+
+.container  i:hover{
+    color: rgba(255, 0, 0, 0.705);
 }
 ul li{
     display: inline-block;
@@ -32,6 +43,9 @@ ul li a{
     margin: 0 10px;
 
 }
+ul li a:hover{
+    color: rgb(108, 89, 65);
+}
 .content{
     display: flex;
     justify-content: space-between;
@@ -40,7 +54,7 @@ ul li a{
     margin: auto;
 }
 .content .text{
-    width: 40%;
+    width: 50%;
     color: white;
 }
 .content .text h2{
@@ -58,22 +72,45 @@ ul li a{
     color: black;
     padding: 8px 15px;
     border-radius: 20px;
+
+}
+.content .text a:hover{
+    background-color: rgba(67, 78, 96, 0.5);
+    
 }
 @media(max-width:600px){
+    header ul {
+        display: none;
+    }
+    .content{
+        flex-direction: column-reverse;
+    }
+    .content .text{
+        width: 90%;
+        padding-bottom: 150px;
+    }
+    .icons{
+        display: flex;
+        
+    }
     .content .text h2{
-        font-size: 28px;
+        font-size: 32px;
     }
-    .content .text p{
-        font-size: 15px;
-        margin: 15px 0;
-    }
+
+
+
+
+
+
+
+    
 }
 .content .image{
-    width: 30%;
+    width: 40%;
 
 }
 .content .image img{
-    width: 180px;
+    width: 100%;
 
 }
 .icons{
@@ -92,3 +129,4 @@ transform: translateX(-50%);
     transform: scale(1.2);
     cursor: pointer;
 }
+
